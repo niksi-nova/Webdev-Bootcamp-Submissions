@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anay's To-Do ⚡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <header>
+    <div class="avatar-ring">
+      <img
+  src="https://media1.tenor.com/m/WUrkcpdNlZ0AAAAC/a.gif"
+  alt="Anay's avatar">
+  
+    </div>
+    <div class="header-text">
+      <h1>Anay's To-Do <span class="bolt">⚡</span></h1>
+      <p class="bio">ETE student. Surviving deadlines,<br>one checkbox at a time.</p>
+    </div>
+  </header>
+
+  <div class="tags">
+    <span class="tag dark">🗓 semester 2</span>
+    <span class="tag dark">🔧 ete branch</span>
+  </div>
+
+  <div class="section-label">my tasks</div>
+
+  <div class="input-row">
+    <input type="text" id="taskInput" placeholder="What needs to get done?" autocomplete="off">
+    <button id="addBtn">+ Add</button>
+  </div>
+
+  <div class="stats-bar" id="statsBar">
+    <span><strong id="totalCount">0</strong> total</span>
+    <span><strong id="doneCount">0</strong> done</span>
+    <span><strong id="leftCount">0</strong> left</span>
+  </div>
+
+  <ul id="taskList">
+    <li class="empty-state" id="emptyState">
+      <span class="emoji">📋</span>
+      Nothing here yet.<br>Add a task above!
+    </li>
+  </ul>
+
+  <footer>made by anay &nbsp;·&nbsp; made for anay</footer>
+</div>
+
+<div class="gif-toast" id="gifToast">
+  <img id="toastGif" src="" alt="reaction gif">
+  <div class="toast-msg">
+    <strong id="toastTitle"></strong>
+    <span id="toastSub"></span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
